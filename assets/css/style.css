@@ -229,24 +229,57 @@ footer {
 
 .social-networks > li {
     display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
+/*gallery*/
+
+#photos {
+    clear: both;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 0px;
+}
+
+#photos > img {
+    width: 100%;
+}
+
+/*media queries*/
+
+/*for larger to medium screens size from 1200px wide and down*/    
+@media screen and (max-width: 1200px) {
+    #club-ethos {
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
     }
 
-    .social-networks i {
-        font-size: 160%;
-        margin: 1%;
-        padding: 5%;
-        color: #3a3a3a;
+    #welcome {
+        padding: 30px 0;
+        margin: 0;
     }
 
-    /*gallery*/
-
-    #photos {
-        clear: both;
-        line-height: 0;
-        column-count: 4;
-        column-gap: 0px;
-    }
-
-    #photos > img {
+    #left-about, #right-about {
         width: 100%;
+        float: left;
+        padding: 0;
     }
+
+    #centre-about {
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    hr {
+        display: none;
+    }
+}
